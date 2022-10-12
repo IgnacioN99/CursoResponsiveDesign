@@ -1,0 +1,183 @@
+:root {
+  /* Colors */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+  --grey: #bababa;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+/* Header */
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 32rem;
+  height: 33.4rem;
+  text-align: center;
+  background: linear-gradient(
+  208.83deg,
+  var(--black) 16.69%,
+  var(--bitcoin-orange) 100%
+  );
+}
+
+header img {
+  width: 15.1rem;
+  height: 2.4rem;
+  margin-top: 6rem;
+  align-self: center;
+}
+
+.header--title-container {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  height: 21.8rem;
+  margin-top: 5rem;
+  text-align: center;
+  align-self: center;
+}
+
+.header--title-container h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.header--title-container p{
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+  font-weight: 500;
+}
+
+.header--title-container .header--button {
+  position: absolute;
+  left: calc(50% - 10.5rem);
+  top: 27rem;
+  display: block;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  width: 22,9rem;
+  height: 4.8rem;
+  background-color: var(--off-white);
+
+  /*sombra*/
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 0.5rem;
+
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: var(--black)
+}
+
+.header--button span{
+  display: inline-block;
+  width: 1.8rem;
+  height: 0.8rem;
+  margin-left: 1rem;
+  background-image: url('../assets/icons/down-arrow.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Main */
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+
+.main-exchange-container{
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.main-exchange-container p{
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+.main-exchange-container h2{
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main-exchange-container--title{
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.main-exchange-container .bitcoin-img{
+  width: 20rem;
+  height: 20rem;
+  /*margin: arriba izq abajo der*/
+  margin: 0 auto 5rem auto;
+  /* url backsize backposition backrepeat*/
+  background: url('../assets/img/Bitcoin.svg') center/cover no-repeat; 
+}
+
+.main-currency-table{
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.main-currency-table .currency-table--title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.currency-table--footer{
+  width: 190px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
+.currency-table--footer p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
