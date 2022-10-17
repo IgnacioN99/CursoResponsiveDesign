@@ -1,3 +1,7 @@
+@import "table.css";
+@import "details.css";
+@import "plans.css";
+@import "footer.css";
 :root {
   /* Colors */
   --bitcoin-orange: #f7931a;
@@ -77,7 +81,7 @@ header img {
   padding: 1.5rem;
   width: 22,9rem;
   height: 4.8rem;
-  background-color: var(--off-white);
+  background-color: #faf8f7;
 
   /*sombra*/
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -147,37 +151,20 @@ main {
   background: url('../assets/img/Bitcoin.svg') center/cover no-repeat; 
 }
 
-.main-currency-table{
-  width: 70%;
-  min-width: 235px;
-  max-width: 500px;
-  height: 360px;
-  margin: 0 auto;
-  font-family: "Inter", sans-serif;
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url("../assets/img/bitcoinbaby2x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
-
-.main-currency-table .currency-table--title {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
   font-weight: bold;
-  line-height: 2.3rem;
-  color: var(--bitcoin-orange);
-  text-align: left;
-  margin-left: 2rem;
-}
-
-.currency-table--footer{
-  width: 190px;
-  height: 31px;
-  margin: 0 auto;
-  margin-top: 15px;
-  padding: 8px;
-  background-color: var(--soft-orange);
-  border-radius: 8px;
-}
-.currency-table--footer p{
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  color: var(--warm-black);
+  line-height: 2.6rem;
+  color: var(--just-white);
 }
